@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  oairan:
+    image: tig4605246/oairan:1.0
+    restart: unless-stopped
+    container_name: oairan
+    hostname: ubuntu
+    privileged: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /lib/modules:/lib/modules:ro
+      - /dev/bus/usb/:/dev/bus/usb/

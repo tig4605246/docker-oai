@@ -1,0 +1,72 @@
+version: '2'
+
+services:
+  oaihss:
+    image: tig4605246/oaicn:1.1
+    restart: unless-stopped
+    container_name: oaihss
+    hostname: ubuntu
+    privileged: true
+    depends_on:
+      - "mysql"
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /lib/modules:/lib/modules:ro
+    networks:
+      - oai
+  
+  oaimme:
+    image: tig4605246/oaicn:1.2
+    restart: unless-stopped
+    container_name: oaimme
+    hostname: nano
+    privileged: true
+    depends_on:
+      - "mysql"
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /lib/modules:/lib/modules:ro
+    networks:
+      - oai
+  
+  oaispgw:
+    image: tig4605246/oaicn:1.2
+    restart: unless-stopped
+    container_name: oaispgw
+    hostname: kiwi
+    privileged: true
+    depends_on:
+      - "mysql"
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /lib/modules:/lib/modules:ro
+    networks:
+      - oai
+
+  oairan:
+    image: tig4605246/oairan:1.0
+    restart: unless-stopped
+    container_name: oairan
+    hostname: rayray
+    privileged: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /lib/modules:/lib/modules:ro
+      - /dev/bus/usb/:/dev/bus/usb/
+    networks:
+      - oai
+
+  mysql:
+    image: mysql:5.6
+    restart: unless-stopped
+    container_name: mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=linux
+    networks:
+      - oai
+
+networks:
+  oai:
+    driver: bridge

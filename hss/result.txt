@@ -1,0 +1,395 @@
+The random theta[i] =32.982
+The random square of ratio R[i] = 59.481
+The random ratio r = 7.71239The random x[i] =6.46948
+The random y[i] =4.19844
+The random theta[i] =221.699
+The random square of ratio R[i] = 56.761
+The random ratio r = 7.53399The random x[i] =-5.62525
+The random y[i] =-5.01174
+The random theta[i] =160.472
+The random square of ratio R[i] = 87.878
+The random ratio r = 9.37433The random x[i] =-8.8351
+The random y[i] =3.13353
+The random theta[i] =333.748
+The random square of ratio R[i] = 78.602
+The random ratio r = 8.86578The random x[i] =7.95134
+The random y[i] =-3.92151
+The random theta[i] =94.631
+The random square of ratio R[i] = 95.096
+The random ratio r = 9.75172The random x[i] =-0.787336
+The random y[i] =9.71988
+The random theta[i] =24.274
+The random square of ratio R[i] = 3.789
+The random ratio r = 1.94654The random x[i] =1.77444
+The random y[i] =0.800222
+The random theta[i] =166.841
+The random square of ratio R[i] = 78.062
+The random ratio r = 8.83527The random x[i] =-8.60327
+The random y[i] =2.01139
+The random theta[i] =132.837
+The random square of ratio R[i] = 58.37
+The random ratio r = 7.64003The random x[i] =-5.19457
+The random y[i] =5.60236
+The random theta[i] =164.025
+The random square of ratio R[i] = 58.259
+The random ratio r = 7.63276The random x[i] =-7.338
+The random y[i] =2.10067
+The random theta[i] =100.518
+The random square of ratio R[i] = 39.702
+The random ratio r = 6.30095The random x[i] =-1.1502
+The random y[i] =6.19508
+The random theta[i] =115.479
+The random square of ratio R[i] = 27.695
+The random ratio r = 5.2626The random x[i] =-2.26387
+The random y[i] =4.75078
+The random theta[i] =148.778
+The random square of ratio R[i] = 3.005
+The random ratio r = 1.73349The random x[i] =-1.48242
+The random y[i] =0.898566
+The random theta[i] =171.763
+The random square of ratio R[i] = 4.515
+The random ratio r = 2.12485The random x[i] =-2.10293
+The random y[i] =0.304424
+The random theta[i] =100.18
+The random square of ratio R[i] = 41.749
+The random ratio r = 6.46135The random x[i] =-1.14199
+The random y[i] =6.35963
+The random theta[i] =145.427
+The random square of ratio R[i] = 33.334
+The random ratio r = 5.77356The random x[i] =-4.75397
+The random y[i] =3.27624
+The random theta[i] =182.377
+The random square of ratio R[i] = 54.762
+The random ratio r = 7.40014The random x[i] =-7.39377
+The random y[i] =-0.306917
+The random theta[i] =329.165
+The random square of ratio R[i] = 20.43
+The random ratio r = 4.51996The random x[i] =3.88105
+The random y[i] =-2.31678
+The random theta[i] =131.521
+The random square of ratio R[i] = 89.638
+The random ratio r = 9.46773The random x[i] =-6.27611
+The random y[i] =7.08861
+The random theta[i] =168.306
+The random square of ratio R[i] = 21.622
+The random ratio r = 4.64995The random x[i] =-4.55343
+The random y[i] =0.942473
+The random theta[i] =244.591
+The random square of ratio R[i] = 19.29
+The random ratio r = 4.39204The random x[i] =-1.88452
+The random y[i] =-3.96719
+The random theta[i] =153.069
+The random square of ratio R[i] = 88.866
+The random ratio r = 9.42688The random x[i] =-8.40456
+The random y[i] =4.26959
+The random theta[i] =23.078
+The random square of ratio R[i] = 99.911
+The random ratio r = 9.99555The random x[i] =9.19563
+The random y[i] =3.91809
+The random theta[i] =123.278
+The random square of ratio R[i] = 32.268
+The random ratio r = 5.68049The random x[i] =-3.1169
+The random y[i] =4.74899
+The random theta[i] =154.631
+The random square of ratio R[i] = 3.656
+The random ratio r = 1.91207The random x[i] =-1.72768
+The random y[i] =0.819218
+The random theta[i] =310.526
+The random square of ratio R[i] = 71.502
+The random ratio r = 8.45589The random x[i] =5.49458
+The random y[i] =-6.42741
+The random theta[i] =99.708
+The random square of ratio R[i] = 86.006
+The random ratio r = 9.27394The random x[i] =-1.56384
+The random y[i] =9.14114
+The random theta[i] =59.195
+The random square of ratio R[i] = 88.487
+The random ratio r = 9.40675The random x[i] =4.81737
+The random y[i] =8.0796
+The random theta[i] =245.361
+The random square of ratio R[i] = 67.312
+The random ratio r = 8.20439The random x[i] =-3.42041
+The random y[i] =-7.4574
+The random theta[i] =49.352
+The random square of ratio R[i] = 45.542
+The random ratio r = 6.74848The random x[i] =4.39603
+The random y[i] =5.12025
+The random theta[i] =169.059
+The random square of ratio R[i] = 51.132
+The random ratio r = 7.15066The random x[i] =-7.02069
+The random y[i] =1.35718
+The random theta[i] =15.226
+The random square of ratio R[i] = 7.79
+The random ratio r = 2.79106The random x[i] =2.69308
+The random y[i] =0.733007
+The random theta[i] =205.893
+The random square of ratio R[i] = 4.393
+The random ratio r = 2.09595The random x[i] =-1.88554
+The random y[i] =-0.915284
+The random theta[i] =144.57
+The random square of ratio R[i] = 33.767
+The random ratio r = 5.81094The random x[i] =-4.73489
+The random y[i] =3.36865
+The random theta[i] =30.381
+The random square of ratio R[i] = 52.877
+The random ratio r = 7.27166The random x[i] =6.27312
+The random y[i] =3.67762
+The random theta[i] =191.74
+The random square of ratio R[i] = 94.973
+The random ratio r = 9.74541The random x[i] =-9.54154
+The random y[i] =-1.98291
+The random theta[i] =48.518
+The random square of ratio R[i] = 4.81
+The random ratio r = 2.19317The random x[i] =1.45272
+The random y[i] =1.64304
+The random theta[i] =100.189
+The random square of ratio R[i] = 27.949
+The random ratio r = 5.28668The random x[i] =-0.935192
+The random y[i] =5.20331
+The random theta[i] =304.719
+The random square of ratio R[i] = 83.468
+The random ratio r = 9.13608The random x[i] =5.20348
+The random y[i] =-7.50945
+The random theta[i] =60.215
+The random square of ratio R[i] = 95.704
+The random ratio r = 9.78284The random x[i] =4.8596
+The random y[i] =8.49048
+The random theta[i] =67.122
+The random square of ratio R[i] = 50.742
+The random ratio r = 7.12334The random x[i] =2.76934
+The random y[i] =6.56298
+The random theta[i] =187.204
+The random square of ratio R[i] = 46.831
+The random ratio r = 6.84332The random x[i] =-6.7893
+The random y[i] =-0.858169
+The random theta[i] =353.098
+The random square of ratio R[i] = 82.753
+The random ratio r = 9.09687The random x[i] =9.03094
+The random y[i] =-1.09318
+The random square of ratio R[i] = 51.67
+The random ratio r = 7.18818The random x[i] =-2.04277
+The random y[i] =6.89181
+The random theta[i] =238.459
+The random square of ratio R[i] = 50.064
+The random ratio r = 7.07559The random x[i] =-3.7013
+The random y[i] =-6.03029
+The random theta[i] =297.373
+The random square of ratio R[i] = 20.353
+The random ratio r = 4.51143The random x[i] =2.07427
+The random y[i] =-4.00629
+The random theta[i] =119.122
+The random square of ratio R[i] = 28.506
+The random ratio r = 5.3391The random x[i] =-2.59838
+The random y[i] =4.66416
+The random theta[i] =155.579
+The random square of ratio R[i] = 83.264
+The random ratio r = 9.12491The random x[i] =-8.30853
+The random y[i] =3.77259
+The random theta[i] =170.75
+The random square of ratio R[i] = 19.972
+The random ratio r = 4.469The random x[i] =-4.41089
+The random y[i] =0.718359
+The random theta[i] =87.833
+The random square of ratio R[i] = 0.869
+The random ratio r = 0.932202The random x[i] =0.0352487
+The random y[i] =0.931535
+The random theta[i] =86.704
+The random square of ratio R[i] = 97.063
+The random ratio r = 9.85206The random x[i] =0.566437
+The random y[i] =9.83576
+The random theta[i] =172.608
+The random square of ratio R[i] = 41.678
+The random ratio r = 6.45585The random x[i] =-6.4022
+The random y[i] =0.830591
+The random theta[i] =5.58
+The random square of ratio R[i] = 77.418
+The random ratio r = 8.79875The random x[i] =8.75706
+The random y[i] =0.855551
+The random theta[i] =101.866
+The random square of ratio R[i] = 13.529
+The random ratio r = 3.67818The random x[i] =-0.75632
+The random y[i] =3.59958
+The random theta[i] =18.489
+The random square of ratio R[i] = 41.687
+The random ratio r = 6.45655The random x[i] =6.12329
+The random y[i] =2.04752
+The random theta[i] =330.095
+The random square of ratio R[i] = 94.193
+The random ratio r = 9.70531The random x[i] =8.41308
+The random y[i] =-4.83871
+The random theta[i] =225.16
+The random square of ratio R[i] = 57.19
+The random ratio r = 7.56241The random x[i] =-5.33248
+The random y[i] =-5.36234
+The random theta[i] =137.748
+The random square of ratio R[i] = 8.344
+The random ratio r = 2.8886The random x[i] =-2.13813
+The random y[i] =1.94227
+The random theta[i] =250.287
+The random square of ratio R[i] = 60.501
+The random ratio r = 7.77824The random x[i] =-2.62367
+The random y[i] =-7.32239
+The random theta[i] =196.364
+The random square of ratio R[i] = 85.1
+The random ratio r = 9.22497The random x[i] =-8.85127
+The random y[i] =-2.59903
+The random theta[i] =250.563
+The random square of ratio R[i] = 53.738
+The random ratio r = 7.33062The random x[i] =-2.43941
+The random y[i] =-6.91283
+The random theta[i] =185.451
+The random square of ratio R[i] = 86.039
+The random ratio r = 9.27572The random x[i] =-9.23377
+The random y[i] =-0.881142
+The random theta[i] =98.594
+The random square of ratio R[i] = 21.031
+The random ratio r = 4.58596The random x[i] =-0.685288
+The random y[i] =4.53447
+The random theta[i] =229.301
+The random square of ratio R[i] = 65.697
+The random ratio r = 8.10537The random x[i] =-5.28539
+The random y[i] =-6.14505
+The random theta[i] =37.353
+The random square of ratio R[i] = 97.136
+The random ratio r = 9.85576The random x[i] =7.83447
+The random y[i] =5.97973
+The random theta[i] =166.565
+The random ratio r = 6.18574e+111The random x[i] =-6.01646e+111
+The random y[i] =1.43721e+111
+The random theta[i] =124.058
+The random square of ratio R[i] = 94.198
+The random ratio r = 9.70557The random x[i] =-5.43543
+The random y[i] =8.04078
+The random theta[i] =339.173
+The random square of ratio R[i] = 62.088
+The random ratio r = 7.87959The random x[i] =7.36473
+The random y[i] =-2.80157
+The random theta[i] =196.129
+The random square of ratio R[i] = 32.944
+The random ratio r = 5.73969The random x[i] =-5.51376
+The random y[i] =-1.59449
+The random theta[i] =60.305
+The random square of ratio R[i] = 26.01
+The random ratio r = 5.1The random x[i] =2.52645
+The random y[i] =4.43024
+The random theta[i] =71.432
+The random square of ratio R[i] = 61.992
+The random ratio r = 7.8735The random x[i] =2.50716
+The random y[i] =7.46366
+The random theta[i] =76.104
+The random square of ratio R[i] = 41.977
+The random ratio r = 6.47897The random x[i] =1.55599
+The random y[i] =6.28935
+The random theta[i] =83.504
+The random square of ratio R[i] = 73.294
+The random ratio r = 8.56119The random x[i] =0.968561
+The random y[i] =8.50623
+The random theta[i] =159.724
+The random square of ratio R[i] = 31.848
+The random ratio r = 5.6434The random x[i] =-5.29371
+The random y[i] =1.95568
+The random theta[i] =139.933
+The random square of ratio R[i] = 80.226
+The random ratio r = 8.9569The random x[i] =-6.85464
+The random y[i] =5.7654
+The random theta[i] =228.211
+The random square of ratio R[i] = 85.033
+The random ratio r = 9.22133The random x[i] =-6.145
+The random y[i] =-6.87546
+The random theta[i] =267.14
+The random square of ratio R[i] = 61.949
+The random ratio r = 7.87077The random x[i] =-0.392717
+The random y[i] =-7.86097
+The random theta[i] =10.483
+The random ratio r = 2.02649e+77The random x[i] =1.99267e+77
+The random y[i] =3.68708e+76
+The random theta[i] =193.178
+The random square of ratio R[i] = 76.896
+The random ratio r = 8.76904The random x[i] =-8.53812
+The random y[i] =-1.99914
+The random theta[i] =351.514
+The random ratio r = 3.19561e+19The random x[i] =3.16062e+19
+The random y[i] =-4.71569e+18
+The random theta[i] =62.48
+The random square of ratio R[i] = 42.592
+The random ratio r = 6.52625The random x[i] =3.01551
+The random y[i] =5.78781
+The random theta[i] =305.219
+The random square of ratio R[i] = 75.968
+The random ratio r = 8.71596The random x[i] =5.02652
+The random y[i] =-7.12054
+The random theta[i] =9.156
+The random ratio r = 2.82828e+36The random x[i] =2.79225e+36
+The random y[i] =4.50045e+35
+The random theta[i] =69.277
+The random square of ratio R[i] = 70.165
+The random ratio r = 8.37646The random x[i] =2.96401
+The random y[i] =7.83452
+The random theta[i] =264.682
+The random square of ratio R[i] = 51.365
+The random ratio r = 7.16694The random x[i] =-0.664256
+The random y[i] =-7.13609
+The random theta[i] =322.645
+The random square of ratio R[i] = 13.978
+The random ratio r = 3.73872The random x[i] =2.97187
+The random y[i] =-2.26847
+The random theta[i] =171.67
+The random square of ratio R[i] = 8.655
+The random ratio r = 2.94194The random x[i] =-2.9109
+The random y[i] =0.426211
+The random theta[i] =221.761
+The random square of ratio R[i] = 50.014
+The random ratio r = 7.07206The random x[i] =-5.27526
+The random y[i] =-4.71017
+The random theta[i] =144.758
+The random square of ratio R[i] = 3.738
+The random ratio r = 1.93339The random x[i] =-1.57904
+The random y[i] =1.11563
+The random theta[i] =113.517
+The random square of ratio R[i] = 14.405
+The random ratio r = 3.79539The random x[i] =-1.51444
+The random y[i] =3.48015
+The random theta[i] =319.813
+The random square of ratio R[i] = 21.717
+The random ratio r = 4.66015The random x[i] =3.56009
+The random y[i] =-3.00712
+The random theta[i] =174.337
+The random square of ratio R[i] = 20.039
+The random ratio r = 4.47649The random x[i] =-4.45465
+The random y[i] =0.441728
+The random theta[i] =289.927
+The random square of ratio R[i] = 99.37
+The random ratio r = 9.96845The random x[i] =3.39747
+The random y[i] =-9.37162
+The random theta[i] =243.531
+The random square of ratio R[i] = 8.229
+The random ratio r = 2.86862The random x[i] =-1.27858
+The random y[i] =-2.56792
+The random theta[i] =9.852
+The random square of ratio R[i] = 36.71
+The random ratio r = 6.05888The random x[i] =5.96953
+The random y[i] =1.0367
+The random theta[i] =225.123
+The random square of ratio R[i] = 17.719
+The random ratio r = 4.20939The random x[i] =-2.97009
+The random y[i] =-2.98287
+The random theta[i] =139.189
+The random square of ratio R[i] = 44.067
+The random ratio r = 6.6383The random x[i] =-5.02433
+The random y[i] =4.33857
+The random theta[i] =222.938
+The random square of ratio R[i] = 75.157
+The random ratio r = 8.66931The random x[i] =-6.34673
+The random y[i] =-5.90559
+The random theta[i] =269.575
+The random square of ratio R[i] = 8.568
+The random ratio r = 2.92711The random x[i] =-0.0217121
+The random y[i] =-2.92703
+The random theta[i] =201.672
+The random square of ratio R[i] = 50.61
+The random ratio r = 7.11407The random x[i] =-6.6112
+The random y[i] =-2.62717
+The random theta[i] =236.284
+The random square of ratio R[i] = 44.318
+The random ratio r = 6.65718The random x[i] =-3.69524
+The random y[i] =-5.53743

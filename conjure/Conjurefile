@@ -1,0 +1,97 @@
+# (Required) Name of spell to summon. This can be in the form
+# of a GitHub repo, filesystem path, or a pre-packaged spell.
+#
+# Choose One of:
+#
+# A prebundled spell:
+spell: kubernetes-core
+
+# A GitHub Repo
+# spell: battlemidget/ghost
+#
+# A local filesystem path
+# spell: ~/spells/hadoop-spark
+
+# (Required) The cloud to use. This can be any cloud listed here:
+# https://jujucharms.com/docs/stable/clouds#listing-available-clouds
+# cloud: localhost
+
+# A provider can also be a cloud/region
+cloud: localhost
+#
+# (Optional) Controller name. This can be any arbitrary name of your Juju
+# controller.
+controller: localk8s
+
+# (Optional) Model name. This can be any arbitrary name of your Juju Model
+model: k8s-1
+
+# (Optional) Model config. Options to set on a controller model
+# https://docs.jujucharms.com/devel/en/models-config#list-of-model-keys
+#
+# Note: See section Proxy below for setting apt(s)/http(s) proxy settings
+#
+# model-config:
+#   vpc-id: VPC1234
+#   apt-mirror: http://archive.ubuntu.com/ubuntu/
+
+# (Optional) Set any addons you wish to deploy.
+#
+# For the Kubernetes spell you may want Helm installed so you can deploy
+# charts to the cluster.
+# addons:
+#  helm:
+#    01_install-helm:
+#      helm_version: v2.8.1
+
+# (Optional) Customize any of the steps that are run once the spell is
+# deployed
+#
+steps:
+    01_select-network:
+        networkplugin: "flannel"
+
+# (Optional) Execute a custom script once everything is deployed. This
+# could be anything you choose, whether it's deploying a Helm chart, to
+# scaling out your cluster.
+#
+# on-complete: ./my_custom_script.sh
+
+# Debugging
+debug: false
+
+# Reporting
+# no-track: false
+# no-report: false
+
+# Spell Registry
+# Provide a custom registry endpoint
+# registry: https://github.com/conjure-up/spells.git
+
+# Spells Directory
+# Local directory of spells
+# spells-dir: /home/user/spells
+
+# Do not sync with remote spells registry. Should be used in conjuction
+# with `spells-dir` if custom spells are used.
+# no-sync: true
+
+# Proxy
+# apt-proxy: http://localhost:5555
+# apt-https-proxy: https://localhost:5555
+# http-proxy: https://localhost:4444
+# https-proxy: https://localhost:4444
+
+# Comma separate list of ips to not filter through proxy
+# no-proxy: 8.8.8.8,172.16.0.1
+
+# Override Juju default controller series
+# bootstrap-series: bionic
+
+# (Optional) Bundle Add
+# Add a Juju bundle fragment overlay
+# bundle-add: /home/user/my-bundle-fragment.yaml
+
+# (Optional) Bundle Remove
+# Remove a section of a spells bundle fragment
+# bundle-remove: /home/user/my-bundle-remove-fragment.yaml

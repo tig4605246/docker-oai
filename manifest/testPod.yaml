@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testpod-deployment
+  labels:
+    app: testpod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: testpod
+  template:
+    metadata:
+      labels:
+        app: testpod
+    spec:
+      containers:
+      - name: testpod
+        image: ubuntu:16.04
+        command: ["/bin/bash", "-ec", "while :; do echo '.'; sleep 5 ; done"]
+        securityContext:
+          privileged: true
+        ports:
+        - containerPort: 80
