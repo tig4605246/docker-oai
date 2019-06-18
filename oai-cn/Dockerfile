@@ -14,6 +14,8 @@ RUN apt-get install -y dnsutils
 RUN apt-get install -y net-tools
 RUN apt-get install -y iputils-ping
 RUN apt-get install -y vim
+RUN apt-get install -y tcpdump
+RUN mv /usr/sbin/tcpdump /usr/bin/
 
 # Use rc.local to help
 COPY ./init.sh /root/

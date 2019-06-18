@@ -42,7 +42,7 @@ spec:
     spec:
       containers:
       - name: oaihss
-        image: tig4605246/oaicn:1.1
+        image: tig4605246/oaicn:1.2
         imagePullPolicy: Always
         command: ["/sbin/init"]
         securityContext:

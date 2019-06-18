@@ -1,10 +1,10 @@
 version: '2'
 
 services:
-  oaihss:
+  oaicn:
     image: tig4605246/oaicn:1.1
     restart: unless-stopped
-    container_name: oaihss
+    container_name: oaicn
     hostname: ubuntu
     privileged: true
     depends_on:
@@ -15,39 +15,39 @@ services:
     networks:
       - oai
   
-  oaimme:
-    image: tig4605246/oaicn:1.2
-    restart: unless-stopped
-    container_name: oaimme
-    hostname: nano
-    privileged: true
-    depends_on:
-      - "mysql"
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-      - /lib/modules:/lib/modules:ro
-    networks:
-      - oai
+  # oaimme:
+  #   image: tig4605246/oaicn:1.2
+  #   restart: unless-stopped
+  #   container_name: oaimme
+  #   hostname: ubuntu
+  #   privileged: true
+  #   depends_on:
+  #     - "mysql"
+  #   volumes:
+  #     - /sys/fs/cgroup:/sys/fs/cgroup:ro
+  #     - /lib/modules:/lib/modules:ro
+  #   networks:
+  #     - oai
   
-  oaispgw:
-    image: tig4605246/oaicn:1.2
-    restart: unless-stopped
-    container_name: oaispgw
-    hostname: kiwi
-    privileged: true
-    depends_on:
-      - "mysql"
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-      - /lib/modules:/lib/modules:ro
-    networks:
-      - oai
+  # oaispgw:
+  #   image: tig4605246/oaicn:1.2
+  #   restart: unless-stopped
+  #   container_name: oaispgw
+  #   hostname: kiwi
+  #   privileged: true
+  #   depends_on:
+  #     - "mysql"
+  #   volumes:
+  #     - /sys/fs/cgroup:/sys/fs/cgroup:ro
+  #     - /lib/modules:/lib/modules:ro
+  #   networks:
+  #     - oai
 
   oairan:
     image: tig4605246/oairan:1.0
     restart: unless-stopped
     container_name: oairan
-    hostname: rayray
+    hostname: oairan
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
