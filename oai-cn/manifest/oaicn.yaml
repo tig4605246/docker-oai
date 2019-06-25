@@ -1,10 +1,10 @@
 apiVersion: v1
-kind: Service
+kind: Service # Define resouce type
 metadata:
   name: oaicn
-  labels:
+  labels: # For mapping PODs, StatefulSet or DaemonSet
     app: oaicn
-spec:
+spec: # Specify the ports we want to expose
   ports:
     - name: "enb"
       port: 2152
@@ -18,9 +18,9 @@ spec:
       port: 3870
     - name: "spgw-2"
       port: 5870
-  selector:
-    app: oaicn
-  clusterIP: None
+  selector: # Serve PODs with following labels
+    app: oaicn 
+  clusterIP: None # Means internal service
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -28,11 +28,11 @@ metadata:
   name: oaicn
   labels:
     app: oaicn
-  annotations:
+  annotations: # Disable apparmour for our snap docker containers
     container.apparmor.security.beta.kubernetes.io/oaicn: unconfined
 spec:
-  replicas: 1
-  selector:
+  replicas: 1 # 1 oaicn container at a time
+  selector: 
     matchLabels:
       app: oaicn
   template:
@@ -40,7 +40,7 @@ spec:
       labels:
         app: oaicn
     spec:
-      containers:
+      containers: # Specify the details of containers we want to run
       - name: oaicn
         image: tig4605246/oaicn:1.1
         imagePullPolicy: Always
@@ -52,11 +52,12 @@ spec:
           name: cgroup
         - mountPath: /lib/modules/
           name: module
-        ports:
+        ports: # container port we want to expose
         - containerPort: 80
-      volumes:
+      volumes: # volumes we want to mount to the container
       - name: cgroup
-        hostPath:
+        hostPath: 
+        # The type "hostPath" means the volume is mounted from the host
           path: /sys/fs/cgroup/
       - name: module
         hostPath:

@@ -2,9 +2,9 @@ version: '2'
 
 services:
   oairan:
-    image: tig4605246/oairan:1.0
+    image: tig4605246/oairan:1.1
     restart: unless-stopped
-    container_name: oairan
+    container_name: oairan1_1
     hostname: ubuntu
     privileged: true
     volumes:
