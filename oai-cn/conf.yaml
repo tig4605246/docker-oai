@@ -1,0 +1,5 @@
+MCC: "208"                 
+MNC: "95"                   
+EutraBand: "7"             
+DownlinkFrequency: "2685000000L"    
+UplinkFrequencyOffset: "-120000000"

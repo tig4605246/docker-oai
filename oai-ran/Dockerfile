@@ -18,6 +18,7 @@ RUN apt-get install -y vim
 # Use rc.local to help
 COPY ./init.sh /root/
 COPY ./hook /root/
+COPY ./conf.yaml /root/
 RUN sed -i "13s/^/\/root\/init.sh/g" /etc/rc.local
 RUN chmod +x /etc/rc.local
 

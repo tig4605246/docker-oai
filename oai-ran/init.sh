@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/root/hook -ran &
+/root/hook -installRAN &
