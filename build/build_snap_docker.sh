@@ -25,6 +25,7 @@
 # brief         Build and renew the local image  
 # author        Kevin Hsu (C) - 2019 hsuh@eurecom.fr
 
+# Information of the image
 REPO_NAME="tig4605246"
 OAICN="${REPO_NAME}/oaicn"
 OAIRAN="${REPO_NAME}/oairan"
@@ -48,9 +49,11 @@ contains() {
     fi
 }
 
+# Rebuild hook every time to update the change
 build_hook(){
+    echo "build hook from source"
     go build ${GOPATH}/src/oai-snap-in-docker/cmd/hook/
-    mv ${GOPATH}/src/oai-snap-in-docker/cmd/hook/hook ./
+    # mv ${GOPATH}/src/oai-snap-in-docker/cmd/hook/hook ./
 }
 
 # Recreate oai-cn base image
@@ -59,14 +62,16 @@ build_cn_base(){
     cp ../build/hook ./
     cp ../build/conf.yaml ./
     docker build -t ${OAICN}:${TAG_TEST} --force-rm=true --rm=true .  |& tee build.log
+    clean_up
 }
 
 # Recreate oai-ran base image
 build_ran_base(){
-    cd oai-ran/
+    cd ../oai-ran/
     cp ../build/hook ./
     cp ../build/conf.yaml ./
     docker build -t ${OAIRAN}:${TAG_TEST} --force-rm=true --rm=true . |& tee build.log
+    clean_up
 }
 
 # Build oai-cn with base image
@@ -79,10 +84,12 @@ build_cn(){
     do
         sleep 5
         LIST=`docker exec ${OAICN_CONTAINER} snap list`
+        echo "Waiting for snap to be installed..."
         contains "${LIST}" "oai-cn"
         RET=$?
         
     done
+    sleep 5
     docker commit ${OAICN_CONTAINER} ${OAICN}:${RELEASE_TAG}
     docker stop ${OAICN_CONTAINER}
     docker container rm ${OAICN_CONTAINER} -f
@@ -92,7 +99,7 @@ build_cn(){
 
 # Build oai-ran with base image
 build_ran(){
-    build_cn_base
+    build_ran_base
     docker run --name=${OAIRAN_CONTAINER} -ti --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v /lib/modules:/lib/modules:ro -h ubuntu -d ${OAIRAN}:${TAG_TEST}
     RET=1
     echo "Installing snaps..."
@@ -100,10 +107,11 @@ build_ran(){
     do
         sleep 5
         LIST=`docker exec ${OAIRAN_CONTAINER} snap list`
-        contains "${LIST}" "oai-cn"
+        echo "Waiting for snap to be installed..."
+        contains "${LIST}" "oai-ran"
         RET=$?
     done
-    echo "snap installed"
+    sleep 5
     docker commit ${OAIRAN_CONTAINER} ${OAIRAN}:${RELEASE_TAG}
     docker stop ${OAIRAN_CONTAINER}
     docker container rm ${OAIRAN_CONTAINER} -f
@@ -113,6 +121,7 @@ build_ran(){
 
 clean_up(){
     rm hook
+    rm conf.yaml
 }
 
 clean_all(){
@@ -128,11 +137,11 @@ clean_all(){
 main() {
     RELEASE_TAG=${2}
     case ${1} in
-        build-cn)
+        oai-cn)
             build_hook
             build_cn  
         ;;
-        build-ran)
+        oai-ran)
             build_hook
             build_ran
         ;;
@@ -157,7 +166,6 @@ main() {
             exit 0
         ;;
     esac
-    clean_up
 
 }
 main ${1} ${2}

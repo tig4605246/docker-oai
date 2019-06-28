@@ -1,0 +1,1 @@
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/agrion/kubernetes/docker_oai/build/Dockerfile: no such file or directory

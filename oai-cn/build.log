@@ -1,4 +1,4 @@
-Sending build context to Docker daemon  4.104MB
+Sending build context to Docker daemon  4.116MB
 Step 1/22 : FROM ubuntu:16.04
  ---> 9361ce633ff1
 Step 2/22 : ENV container docker
@@ -41,32 +41,32 @@ Step 14/22 : COPY ./init.sh /root/
  ---> Using cache
  ---> 1632814e7480
 Step 15/22 : COPY ./hook /root/
- ---> 75d7b7ff2c84
+ ---> 9270153db341
 Step 16/22 : COPY ./conf.yaml /root/
- ---> f2955ac3f618
+ ---> 3ba88834f623
 Step 17/22 : RUN sed -i "13s/^/\/root\/init.sh/g" /etc/rc.local
- ---> Running in 4930c214d8bf
-Removing intermediate container 4930c214d8bf
- ---> 0073f0c79790
+ ---> Running in 9fcf945b0c5a
+Removing intermediate container 9fcf945b0c5a
+ ---> e09695a3ab26
 Step 18/22 : RUN chmod +x /etc/rc.local
- ---> Running in ac305a2873fd
-Removing intermediate container ac305a2873fd
- ---> 16433718afc5
+ ---> Running in 340d1061526c
+Removing intermediate container 340d1061526c
+ ---> 4007422ed7e6
 Step 19/22 : RUN systemctl enable snapd
- ---> Running in 677b82fbc041
-Removing intermediate container 677b82fbc041
- ---> 9ce04a406c69
+ ---> Running in d059108ce6bc
+Removing intermediate container d059108ce6bc
+ ---> e3e1edfa2882
 Step 20/22 : VOLUME ["/sys/fs/cgroup"]
- ---> Running in e817d4ebd1ca
-Removing intermediate container e817d4ebd1ca
- ---> 1f2cbfe0710d
+ ---> Running in cc66a67c533f
+Removing intermediate container cc66a67c533f
+ ---> 705520e5e09a
 Step 21/22 : STOPSIGNAL SIGRTMIN+3
- ---> Running in d159f3e723e0
-Removing intermediate container d159f3e723e0
- ---> 21f705e6814c
+ ---> Running in 65ed0342a3cb
+Removing intermediate container 65ed0342a3cb
+ ---> 469120329d5a
 Step 22/22 : CMD ["/sbin/init"]
- ---> Running in 0d1fb6e7dce4
-Removing intermediate container 0d1fb6e7dce4
- ---> 1756e3a8cf94
-Successfully built 1756e3a8cf94
+ ---> Running in 3e520c45760a
+Removing intermediate container 3e520c45760a
+ ---> f33b09163b69
+Successfully built f33b09163b69
 Successfully tagged tig4605246/oaicn:test
