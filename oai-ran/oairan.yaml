@@ -32,8 +32,8 @@ spec:
     spec:
       containers:
       - name: oairan
-        image: tig4605246/oairan:1.1
-        imagePullPolicy: Always
+        image: mosaic5gecosys/oairan:1.0
+        imagePullPolicy: IfNotPresent
         command: ["/sbin/init"]
         securityContext:
           privileged: true

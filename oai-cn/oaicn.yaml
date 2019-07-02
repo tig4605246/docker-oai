@@ -42,8 +42,8 @@ spec:
     spec:
       containers: # Specify the details of containers we want to run
       - name: oaicn
-        image: tig4605246/oaicn:1.3
-        imagePullPolicy: Always
+        image: mosaic5gecosys/oaicn:1.0
+        imagePullPolicy: IfNotPresent
         command: ["/sbin/init"]
         securityContext:
           privileged: true
