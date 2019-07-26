@@ -9,7 +9,9 @@ spec:
     - port: 3306
   selector:
     app: oai
-  clusterIP: None
+  #clusterIP: None
+  externalIPs:
+    - "192.168.12.13"
 ---
 # apiVersion: v1
 # kind: PersistentVolumeClaim
@@ -52,6 +54,16 @@ spec:
         ports:
         - containerPort: 3306
           name: mysql
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 10
+            preference:
+              matchExpressions:
+              - key: oai
+                operator: In
+                values:
+                - cn
       #   volumeMounts:
       #   - name: mysql-persistent-storage
       #     mountPath: /var/lib/mysql

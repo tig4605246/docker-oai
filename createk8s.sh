@@ -3,10 +3,10 @@
 # Extra for Ubuntu 16.04
 # 1、kubectl edit cm coredns -n kube-system
 # 2、delete ‘loop’ ,save and exit
-# 3、restart coredns pods by：kubectl delete pod coredns.... -n kube-system
-
+# 3、kubectl -n kube-system delete pod -l k8s-app=kube-dns
 # Python API for creating namespace
 # core_v1_api.py create_namespace
+# kubectl taint node aiyu-lab node-role.kubernetes.io/master:NoSchedule-
 
 start(){
     # Create Single Node Kubernetes automatically, run this with normal user
@@ -51,7 +51,7 @@ start(){
     kubectl taint node ${HOSTNAME} node-role.kubernetes.io/master:NoSchedule-
 
     # Should be revised for proper use
-    if [ ${STARTUP_TYPE} != "calico" ]; then
+    if [ ${STARTUP_TYPE} != "jkl" ]; then
         echo "add privileged account for tiller"
         kubectl apply -f ./tillerRole.yaml    
 

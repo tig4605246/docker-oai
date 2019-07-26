@@ -46,6 +46,16 @@ spec:
           name: usrp
         ports:
         - containerPort: 80
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 10
+            preference:
+              matchExpressions:
+              - key: oai
+                operator: In
+                values:
+                - ran
       volumes:
       - name: cgroup
         hostPath:
