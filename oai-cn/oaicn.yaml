@@ -54,6 +54,16 @@ spec:
           name: module
         ports: # container port we want to expose
         - containerPort: 80
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 10
+            preference:
+              matchExpressions:
+              - key: oai
+                operator: In
+                values:
+                - cn
       volumes: # volumes we want to mount to the container
       - name: cgroup
         hostPath: 
