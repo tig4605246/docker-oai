@@ -51,7 +51,7 @@ start(){
     kubectl taint node ${HOSTNAME} node-role.kubernetes.io/master:NoSchedule-
 
     # Should be revised for proper use
-    if [ ${STARTUP_TYPE} != "jkl" ]; then
+    if [ ${STARTUP_TYPE} == "jkl" ]; then
         echo "add privileged account for tiller"
         kubectl apply -f ./tillerRole.yaml    
 

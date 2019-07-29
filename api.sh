@@ -22,30 +22,52 @@ delete_cr(){
       -X DELETE ${APISERVER}/apis/mosaic5g.com/v1alpha1/namespaces/default/mosaic5gs/mosaic5g
 }
 
-patch_cr(){
+patch_12(){
    curl \
       -H "content-Type: application/json-patch+json" \
       -H "Authorization: Bearer ${TOKEN}"\
       --insecure \
       -X PATCH ${APISERVER}/apis/mosaic5g.com/v1alpha1/namespaces/default/mosaic5gs/mosaic5g \
-      -d '[{"op":"replace","path":"/spec/flexRANDomainName","value":"flexfan"}]'
+      -d '[{"op":"replace","path":"/spec/cnImage","value":"mosaic5gecosys/oaicn:1.2"},{"op":"replace","path":"/spec/ranImage","value":"mosaic5gecosys/oairan:1.2"}]'
+}
+
+patch_11(){
+   curl \
+      -H "content-Type: application/json-patch+json" \
+      -H "Authorization: Bearer ${TOKEN}"\
+      --insecure \
+      -X PATCH ${APISERVER}/apis/mosaic5g.com/v1alpha1/namespaces/default/mosaic5gs/mosaic5g \
+      -d '[{"op":"replace","path":"/spec/cnImage","value":"mosaic5gecosys/oaicn:1.1"},{"op":"replace","path":"/spec/ranImage","value":"mosaic5gecosys/oairan:1.1"}]'
+}
+
+init(){
+   kubectl apply -f defaultRole.yaml
 }
 
 main(){
-   echo "---main start---"
+   echo "---api.sh start---"
    case ${1} in
+      init)
+         init
+      ;;
       apply_cr)
          apply_cr
       ;;
       delete_cr)
          delete_cr
       ;;
-      patch_cr)
-         patch_cr
+      patch_12)
+         patch_12
+      ;;
+      patch_11)
+         patch_11
+      ;;
+      *)
+         echo "Commands: init apply_cr delete_cr patch_cr"
       ;;
    esac
    
-   echo "---main end---"
+   echo "---api.sh end---"
 }
 
 main ${1}
