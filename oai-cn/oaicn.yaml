@@ -40,6 +40,7 @@ spec:
       labels:
         app: oaicn
     spec:
+      hostNetwork: true
       containers: # Specify the details of containers we want to run
       - name: oaicn
         image: mosaic5gecosys/oaicn:1.1

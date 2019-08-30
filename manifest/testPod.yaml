@@ -22,12 +22,3 @@ spec:
           privileged: true
         ports:
         - containerPort: 80
-        volumeMounts:
-        - name: config-volume
-          mountPath: /etc/config
-      volumes:
-        - name: config-volume
-          configMap:
-            # Provide the name of the ConfigMap containing the files you want
-            # to add to the container
-            name: mosaic5g-config

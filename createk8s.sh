@@ -51,7 +51,7 @@ start(){
     kubectl taint node ${HOSTNAME} node-role.kubernetes.io/master:NoSchedule-
 
     # Should be revised for proper use
-    if [ ${STARTUP_TYPE} == "jkl" ]; then
+    if [ ${STARTUP_TYPE} == "NOT IN USE" ]; then
         echo "add privileged account for tiller"
         kubectl apply -f ./tillerRole.yaml    
 
@@ -91,14 +91,15 @@ main() {
         ;;
         *)
             echo "Requirement:"
-            echo "1. helm: sudo snap install helm --classic"
-            echo "2. Set up sudo without password and run this with normal user"
+            #echo "1. helm: sudo snap install helm --classic"
+            echo "1. Set up sudo without password and run this with normal user"
             echo "----"
             echo "Description:"
-            echo "This Script will create a one node Kubernetes will schedulable master. It also inits tiller with helm"
+            echo "This script uses kubeadm to create a custom Kubernetes with calico/flannel CNI plugin"
             echo "tested with 16.04 Ubuntu"
-            echo "[./createk8s.sh start simple] for minimal setup (no cni plugin, no helm init)"
-        ;;
+            echo "Usage: createk8s.sh start [calico|flannel]"
+            echo "createk8s.sh start simple ---- For minimal setup (no cni plugin)"
+        
     esac
 
 }
